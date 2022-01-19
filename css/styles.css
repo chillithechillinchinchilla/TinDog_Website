@@ -28,7 +28,7 @@ h3 {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -66,14 +66,18 @@ h3 {
 
 /* Title Image */
 .title-image {
-  width: 60%;
+  width: 40%;
   margin-left: 20%;
   transform: rotate(25deg);
+  right: 20%;
+  position: absolute;
 }
 
 /* Features Area */
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
 }
 
 .feature-box {
@@ -133,4 +137,27 @@ h3 {
 
 .pricing-column{
   padding: 3% 2%;
+}
+
+
+
+ /* Media Query
+want to make iphone image to become static when viewed on smaller devices.
+want to remove image rotation when viewed on smalled devices
+want to make title text to become center aligned when viewed on smaller devices.
+It can be helpful to try designing webpage mobile 1st and making responsive to desktop,
+and then design another site in desktop and making responsive to mobile
+ */
+
+@media (max-width: 1028px){
+
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    margin: auto;
+  }
+
 }
