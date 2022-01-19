@@ -1,0 +1,4 @@
+containers may seem jumpy when using
+class="container-fluid" fluid container makes things smoother
+bootstrap a row is 12 units. so if you want a col to take up 1/3rd of page when on a large screen,
+you must use col-lg-4
