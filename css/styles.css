@@ -1,35 +1,38 @@
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-#title {
-  background-color: #FF4c68;
-  color: #fff;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: bold;
 }
 
-h1 {
+h3 {
+  font-size: 1.5rem;
+}
+
+
+/* Headings*/
+
+.big-heading {
   font-family: "Montserrat";
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.5;
 }
 
-h2 {
-  font-family: "Montserrat";
-  font-weight: bold;
+.section-heading{
   font-size: 3rem;
   line-height: 1.5;
+
 }
 
-h3 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
+/* Containers */
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
+
 
 /* Navigation Bar */
 .navbar {
@@ -64,6 +67,19 @@ h3 {
   margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+#title {
+  background-color: #FF4c68;
+  color: #fff;
+  text-align: left;
+}
+
+
+/*Target the container fluid within the #title section ONLY, and this will apply because it's more specific*/
+#title .container-fluid{
+  padding: 3% 15% 7%;
+}
+
 /* Title Image */
 .title-image {
   width: 40%;
@@ -75,13 +91,11 @@ h3 {
 
 /* Features Area */
 #features {
-  padding: 7% 15%;
   background-color: #fff;
   position: relative;
 }
 
 .feature-box {
-  text-align: center;
   padding: 2%;
 }
 
@@ -89,6 +103,9 @@ h3 {
   color: #8f8f8f;
 }
 
+.feature-title{
+  font-size: 1.5rem;
+}
 .icon {
   color: #ef8172;
   margin-bottom: 1rem;
@@ -101,7 +118,6 @@ h3 {
 
 /* Testimonial section */
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: #fff;
 }
@@ -112,15 +128,17 @@ h3 {
   margin: 20px;
 }
 
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
 /* Press Section  */
 /* Putting padding in the carousel-item moves the buttons further outside */
-.carousel-item {
-  padding: 7% 15%;
-}
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -129,15 +147,44 @@ h3 {
   margin: 20px 20px 50px;
 }
 
+
 /* Pricing Section */
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+
+.pricing-name{
+  font-size: 1.5rem;
 }
 
 .pricing-column{
   padding: 3% 2%;
 }
+
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+/* CTA Section call to action */
+
+#cta{
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+/* Footer section */
+
+#footer{
+  background-color: #fff;
+}
+
+.social-icon{
+  margin: 20px 10px;
+}
+
+
 
 
 
